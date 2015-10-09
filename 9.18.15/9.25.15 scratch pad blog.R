@@ -8,7 +8,7 @@
 #cakerr@cpp.edu                      #
 ######################################
 
-#change the working directory to wherever you put mls standings 199602013.csv
+#change the working directory to wherever you put mls standings 1996-2013.csv
 setwd("~/Desktop/Econ/Cal Poly/MLS/blog")
 data<-read.csv("mls standings 1996-2013.csv")
 
