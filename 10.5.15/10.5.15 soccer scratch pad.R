@@ -10,8 +10,8 @@
 
 #set working directory to location of data
 #Change this to find the data on your computer
-setwd("/Users/Craig/Desktop/Econ/Cal Poly/MLS/blog/Soccer-Scratch-Pad/10.5.15")
-data<-read.csv("percent tied 1996-2014.csv")
+setwd("/Users/Craig/Desktop/Econ/Cal Poly/MLS/blog/Soccer-Scratch-Pad/")
+data<-read.csv("10.5.15/percent tied 1996-2014.csv")
 attach(data)
 
 
