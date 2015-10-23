@@ -65,7 +65,6 @@ noSO$pct_playoff[noSO$year==2009]<-100*(4/15)
 noSO$pct_playoff[noSO$year==2010]<-100*(2/16)
 noSO$pct_playoff[noSO$year==2011]<-100*(4/18)
 
-#make circles proportional to %of guaranteed conference spots in playoffs
 nosingle<-subset(collapse,pct_playoff==0 & SO=="FALSE")
 
 par(mar=c(8, 4, 4, 4), xpd=TRUE)
