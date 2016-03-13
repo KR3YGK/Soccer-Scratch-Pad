@@ -30,6 +30,6 @@ detach(season)
 hist(season$pct,freq=F)
 idealmean<-4/9
 mean<-mean(season$pct)
-idealsd<-sqrt(2/(9*gp))
+idealsd<-sqrt(14/(81*gp))
 sd<-sd(season$pct)
 

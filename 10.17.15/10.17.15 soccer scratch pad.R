@@ -32,7 +32,7 @@ text(noSO$pct_div,noSO$pct_tie, labels=noSO$year, cex=.7,pos=c(3,2,2,2,4,2,2,2,4
 collapse$SO<-as.factor(collapse$year < 2000)
 
 par(mar=c(7, 4, 4, 4), xpd=TRUE)
-plot(collapse$pct_div,collapse$pct_tie,main="% Ties and % Inter-conference Games",xlab="% conference", ylab="& tied in regulation",pch=19,col=c('blue','red')[collapse$SO])
+plot(collapse$pct_div,collapse$pct_tie,main="% Ties and % Inter-conference Games",xlab="% conference", ylab="% tied in regulation",pch=19,col=c('blue','red')[collapse$SO])
 text(collapse$pct_div,collapse$pct_tie, labels=collapse$year, cex=.7,pos=c(2,1,2,4,3,2,2,2,4,2,2,2,4,2,4,4))
 
 #makes a blank plot to put on top so I can center legend at bottom
@@ -68,7 +68,7 @@ noSO$pct_playoff[noSO$year==2011]<-100*(4/18)
 nosingle<-subset(collapse,pct_playoff==0 & SO=="FALSE")
 
 par(mar=c(8, 4, 4, 4), xpd=TRUE)
-plot(noSO$pct_div,noSO$pct_tie,main="% Ties and % Inter-conference Games", sub="Area of circle proportional to % of teams that make playoffs using a single table", xlab="% conference", ylab="& tied in regulation",pch=1,cex=noSO$pct_playoff/10,col='blue')
+plot(noSO$pct_div,noSO$pct_tie,main="% Ties and % Inter-conference Games", sub="Area of circle proportional to % of teams that make playoffs using a single table", xlab="% conference", ylab="% tied in regulation",pch=1,cex=noSO$pct_playoff/10,col='blue')
 text(noSO$pct_div,noSO$pct_tie, labels=noSO$year, cex=.7,pos=c(2,1,2,2,3,2,2,2,4,2,4,4,2))
 points(nosingle$pct_div,nosingle$pct_tie,pch=19,col='red')
 reset()
